@@ -27,8 +27,11 @@ Config.enableAnnouncements = true;
  * only works if enableAnnouncements = true
  */
 Config.announceMessages = [
-  "Enjoy your stay!",
-  "This loadingscreen is made by Exsite"
+  "Bize katıldığınız için teşekkür ederiz.",
+  "Discord'umuza katılabilirsiniz.",
+  "Server'in tadını çıkarın.",
+  "Server'in workshop'unu indirmeyi unutmayın.",
+  "İyi eğlenceler."
 ];
 
 /**
