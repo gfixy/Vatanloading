@@ -9,9 +9,6 @@ var youtubePlayer;
 var actualMusic = -1;
 
 $(function() {
-	if (l_bgImagesRandom)
-		l_bgImages = shuffle(l_bgImages);
-
 	if (l_musicRandom)
 		l_musicPlaylist = shuffle(l_musicPlaylist);
 
