@@ -30,7 +30,6 @@ Config.announceMessages = [
   "Bize katıldığınız için teşekkür ederiz.",
   "Discord'umuza katılabilirsiniz.",
   "Server'in tadını çıkarın.",
-  "Server'in workshop'unu indirmeyi unutmayın.",
   "İyi eğlenceler."
 ];
 
