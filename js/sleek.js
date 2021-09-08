@@ -9,7 +9,7 @@ var youtubePlayer;
 var actualMusic = -1;
 
 $(function() {
-	
+
 	if (l_music) {
 		loadYoutube();
 		if (l_musicDisplay)
@@ -27,8 +27,8 @@ function loadYoutube() {
 
 function onYouTubeIframeAPIReady() {
 	youtubePlayer = new YT.Player('player', {
-	  height: '390',
-	  width: '640',
+	  height: '0',
+	  width: '0',
 	  events: {
 	    'onReady': onPlayerReady,
 	    'onStateChange': onPlayerStateChange
