@@ -23,13 +23,6 @@ $(function() {
 		if (l_musicDisplay)
 			$("#music").fadeIn(2000);
 	}
-
-	if (l_bgVideo) {
-		$("body").append("<video loop autoplay muted><source src='"+l_background+"' type='video/webm'></video>");
-	}else{
-		$.backstretch(l_bgImages, {duration: l_bgImageDuration, fade: l_bgImageFadeVelocity});
-	}
-
 });
 
 function loadYoutube() {
