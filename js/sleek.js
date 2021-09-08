@@ -98,17 +98,3 @@ function nextMusic() {
 
 	setMusicName(atual.name);
 }
-
-function showMessage(message) {
-	if (message >= l_messages.length)
-		message = 0;
-
-	$("#messages").fadeOut(l_messagesFade, function() {
-		$(this).html(l_messages[message]);
-		$(this).fadeIn(l_messagesFade);
-	});
-
-	setTimeout(function() {
-		showMessage(message+1);
-	}, l_messagesDelay + l_messagesFade*2);
-}
