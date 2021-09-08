@@ -9,9 +9,7 @@ var youtubePlayer;
 var actualMusic = -1;
 
 $(function() {
-	if (l_messagesEnabled)
-		showMessage(0);
-
+	
 	if (l_music) {
 		loadYoutube();
 		if (l_musicDisplay)
