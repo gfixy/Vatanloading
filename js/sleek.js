@@ -130,6 +130,24 @@ $(function() {
 	$("#overlay").css("background-color", "rgba(0,0,0,"+(l_bgDarkening/100)+")");
 });
 
+function loadYoutube() {
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+function onYouTubeIframeAPIReady() {
+	youtubePlayer = new YT.Player('player', {
+	  height: '390',
+	  width: '640',
+	  events: {
+	    'onReady': onPlayerReady,
+	    'onStateChange': onPlayerStateChange
+	  }
+	});
+}
 
 function onPlayerReady(event) {
 	youtubePlayer.setVolume(l_musicVolume);
