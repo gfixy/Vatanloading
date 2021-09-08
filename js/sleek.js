@@ -9,12 +9,6 @@ var youtubePlayer;
 var actualMusic = -1;
 
 $(function() {
-	if (l_musicRandom)
-		l_musicPlaylist = shuffle(l_musicPlaylist);
-
-	if (l_messagesRandom)
-		l_messages = shuffle(l_messages);
-
 	if (l_messagesEnabled)
 		showMessage(0);
 
