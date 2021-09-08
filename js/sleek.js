@@ -152,9 +152,7 @@ function nextMusic() {
 
 	var atual = l_musicPlaylist[actualMusic];
 
-	if (atual.youtube) {
-		youtubePlayer.loadVideoById(atual.youtube);
-	}else{
+	if
 		$("body").append('<audio src="'+atual.ogg+'" autoplay>');
 		$("audio").prop('volume', l_musicVolume/100);
 		$("audio").bind("ended", function() {
