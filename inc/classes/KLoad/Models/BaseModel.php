@@ -10,11 +10,12 @@
  * @license   MIT
  */
 
-//if ($_SERVER['SERVER_NAME'] === 'demo.maddela.org') {
-//    die('making this better, have patience thx');
-//}
-declare(strict_types=1);
+namespace KLoad\Models;
 
-define('KLoad\\'.'APP_START', microtime(true));
+use Illuminate\Database\Eloquent\Model;
+use KLoad\Traits\HasCustomCastsAttributes;
 
-require_once __DIR__.'/vendor/autoload.php';
+class BaseModel extends Model
+{
+    use HasCustomCastsAttributes;
+}

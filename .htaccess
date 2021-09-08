@@ -1,16 +1,12 @@
+# hello hi, no index 4 u
+Options -Indexes
 
-# BEGIN WordPress
-# "BEGIN WordPress" ve "END WordPress" arasındaki yönergeler (satırlar)
-# dinamik olarak oluşturulmuştur ve sadece WordPress süzgeçleri ile düzenlenmelidir.
-# Bu işaretler arasındaki yönergelerde yapılan değişiklikler üzerine yazılacaktır.
+# how 2 make routes work
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /Vatanloading/
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Vatanloading/index.php [L]
-</IfModule>
+    Options -MultiViews
+    RewriteEngine On
 
-# END WordPress
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . index.php [L]
+</IfModule>

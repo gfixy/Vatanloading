@@ -10,11 +10,4 @@
  * @license   MIT
  */
 
-//if ($_SERVER['SERVER_NAME'] === 'demo.maddela.org') {
-//    die('making this better, have patience thx');
-//}
-declare(strict_types=1);
-
-define('KLoad\\'.'APP_START', microtime(true));
-
-require_once __DIR__.'/vendor/autoload.php';
+phpinfo();

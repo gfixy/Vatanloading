@@ -1,0 +1,16 @@
+{% extends 'base.twig' %}
+
+{% block headCss %}
+    <link rel="stylesheet" href="{{ theme_asset('css/dashboard.css', true) }}">
+{% endblock %}
+
+{% block body %}
+    {% include 'partials/sideNav.twig' %}
+    <main>{% block content %}{% endblock %}</main>
+    <div id="toastMessages">
+        {# <div class="notification is-success"> #}
+        {# <button class="delete" onclick="this.parentElement.remove()"></button> #}
+        {# Your changes have been saved! #}
+        {# </div> #}
+    </div>
+{% endblock %}
