@@ -196,11 +196,11 @@ $(document).ready(function() {
         if (needed > 0) {
           needed = needed - 1;
           SetFilesNeeded(needed);
-          DownloadingFile("Filename " + needed);
+          DownloadingFile(" " + needed);
         }
       }, 500);
 
-      SetStatusChanged("Testing..");
+      SetStatusChanged("..");
     }
   }, 1000);
 });
