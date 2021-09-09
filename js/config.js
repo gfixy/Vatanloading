@@ -60,10 +60,10 @@ var l_musicDisplay = true;
 /*Music playlist
 Place how much Youtube IDs/.ogg you want*/
 var l_musicPlaylist = [
-	{ogg: "songs/Adaletin Bu mu Dünya.ogg", name: "Adaletin Bu mu Dünya"},
-	{ogg: "songs/Çare gelmez.ogg", name: "Çare gelmez"},
-	{ogg: "songs/Kiraz Aldım Dikmeden.ogg", name: "Kiraz Aldım Dikmeden"},
-	{ogg: "songs/Yaranamadım.ogg", name: "Yaranamadım"}
+	{ogg: "songs/fkbambam - PUMP UP (feat. longlost).ogg", name: "fkbambam - PUMP UP (feat. longlost)"},
+	{ogg: "songs/Playaphonk - IMMORTAL.ogg", name: "Playaphonk - IMMORTAL"},
+	{ogg: "songs/Playaphonk - Phonky Town.ogg", name: "Playaphonk - Phonky"},
+  /*{ogg: "songs/Yaranamadım.ogg", name: "Yaranamadım"}*/
 ];
 
 /*Random music order?*/
