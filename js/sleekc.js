@@ -54,7 +54,7 @@ Avaiable options:
 
 You can add custom backgrounds
 Just make sure it is at webm VP8 format */
-var l_background = "backgrounds/videos/Pexels Videos 2759477.mp4";
+var l_background = "backgrounds/videos/Pexels.wmv";
 
 /*(Image-background only)
 Place one or more images
