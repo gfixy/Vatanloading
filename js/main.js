@@ -112,7 +112,7 @@ function loadAll() {
     if (downloadingFileCalled) {
       announce(
         "Server'in workshop'unu indirmeyi unutmayın.",
-        true
+        false
       );
     }
   }, 10000);

@@ -16,7 +16,7 @@ function shuffle(array) {
   }
 
   return array;
-}
+}	
 
 function setMusicName(name) {
 	$("#music-name").fadeOut(2000, function() {
@@ -30,14 +30,30 @@ var actualMusic = -1;
 
 $(function() {
 	
+	if (l_bgImagesRandom)
+	l_bgImages = shuffle(l_bgImages);
+
+	
 	if (l_musicRandom)
 	l_musicPlaylist = shuffle(l_musicPlaylist);
 
+	if (l_bgVideo) {
+		$("body").append("<video loop autoplay muted><source src='"+l_background+"' type='video/webm'></video>");
+	}else{
+		$.backstretch(l_bgImages, {duration: l_bgImageDuration, fade: l_bgImageFadeVelocity});
+	}
+	
 	if (l_music) {
 		loadYoutube();
 		if (l_musicDisplay)
 			$("#music").fadeIn(2000);
 	}
+	
+		if (l_bgOverlay)
+		$("#overlay").css("background-image", "url('images/overlay.png')");
+
+	$("#overlay").css("background-color", "rgba(0,0,0,"+(l_bgDarkening/100)+")");
+	
 });
 
 function loadYoutube() {
