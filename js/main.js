@@ -13,7 +13,6 @@ var percentage = 0;
 function GameDetails(
   servername,
   serverurl,
-  mapname,
   maxplayers,
   steamid,
   gamemode
@@ -32,7 +31,7 @@ function GameDetails(
   $("#title").fadeIn();
 
   if (Config.enableMap) {
-    $("#map").append(mapname);
+    $("#map").append();
     $("#map").fadeIn();
   } else {
     $("#map").hide();
