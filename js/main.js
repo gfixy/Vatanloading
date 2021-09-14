@@ -31,7 +31,6 @@ function GameDetails(
   $("#title").fadeIn();
 
   if (Config.enableMap) {
-    $("#map").append();
     $("#map").fadeIn();
   } else {
     $("#map").hide();
@@ -181,6 +180,7 @@ $(document).ready(function() {
       GameDetails(
         "Servername",
         "Serverurl",
+        ";",
         "Maxplayers",
         "SteamID",
         "Gamemode"
