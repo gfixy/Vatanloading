@@ -13,7 +13,7 @@ var percentage = 0;
 function GameDetails(
   servername,
   serverurl,
-  ismi,
+  ismi ,
   maxplayers,
   steamid,
   gamemode
@@ -32,7 +32,7 @@ function GameDetails(
   $("#title").fadeIn();
 
   if (Config.enableMap) {
-    $("#map").append(ismi);
+    $("#map").append(ismi );
     $("#map").fadeIn();
   } else {
     $("#map").hide();
@@ -182,7 +182,7 @@ $(document).ready(function() {
       GameDetails(
         "Servername",
         "Serverurl",
-        "ismi",
+        "ismi ",
         "Maxplayers",
         "SteamID",
         "Gamemode"
