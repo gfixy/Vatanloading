@@ -13,7 +13,7 @@ var percentage = 0;
 function GameDetails(
   servername,
   serverurl,
-  ismi,
+  mapname,
   maxplayers,
   steamid,
   gamemode
@@ -32,7 +32,7 @@ function GameDetails(
   $("#title").fadeIn();
 
   if (Config.enableMap) {
-    $("#map").append(ismi);
+    $("#map").append(mapname);
     $("#map").fadeIn();
   } else {
     $("#map").hide();
@@ -111,8 +111,8 @@ function loadAll() {
     debug("Checking if first time loading.. " + downloadingFileCalled);
     if (downloadingFileCalled) {
       announce(
-        "Server'in workshop'unu indirmeyi unutmayın.",
-        false
+        "This is your first time loading please wait for the files to download",
+        true
       );
     }
   }, 10000);
@@ -182,7 +182,7 @@ $(document).ready(function() {
       GameDetails(
         "Servername",
         "Serverurl",
-        "ismi",
+        "Mapname",
         "Maxplayers",
         "SteamID",
         "Gamemode"
@@ -196,13 +196,11 @@ $(document).ready(function() {
         if (needed > 0) {
           needed = needed - 1;
           SetFilesNeeded(needed);
-          DownloadingFile(" " + needed);
+          DownloadingFile("Filename " + needed);
         }
       }, 500);
 
-      SetStatusChanged("..");
+      SetStatusChanged("Testing..");
     }
   }, 1000);
 });
-
-//****************************
